@@ -1,0 +1,31 @@
+
+
+! $XConsortium: Xresources /main/8 1996/11/11 09:24:46 swick $ 
+! Xresources: 07/Jan/2000 by Piter Punk
+xlogin*login.translations: #override\ 
+      CtrlR: abort-display()\n\ 
+      F1: set-session-argument(failsafe) finish-field()\n\ 
+      CtrlReturn: set-session-argument(failsafe) finish-field()\n\ 
+      Return: set-session-argument() finish-field() 
+xlogin.Login.x: 1000 
+xlogin.Login.y: 400
+xlogin.Login.width: 500
+xlogin.namePrompt: Username:\ 
+xlogin.passwdPrompt: Password:\ 
+xlogin.face: Inconsolata-12:bold
+xlogin.promptFace: Inconsolata-12:bold
+xlogin.failFace: Inconsolata-12:bold
+xlogin*borderWidth: 0 
+xlogin*greeting: Crazy Login 
+#ifdef COLOR 
+xlogin*greetColor: SteelBlue 
+xlogin*promptColor: SteelBlue 
+xlogin*failColor: red 
+*Foreground: grey65 
+*Background: Black 
+#else
+*Foreground: #ffffff 
+*Background: #000000 
+#endif
+
+
