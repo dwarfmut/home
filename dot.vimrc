@@ -1,7 +1,5 @@
-
-
 syntax on
-colorscheme torte
+colorscheme peachpuff 
 set ruler
 set nu
 set visualbell
@@ -24,7 +22,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'mv/mv-vim-puppet'
-Plugin 'pld-linux/vim-syntax-vcl'
+Plugin 'smerrill/vcl-vim-plugin'
 
 call vundle#end() 
 filetype plugin indent on 
