@@ -29,7 +29,13 @@
     gray='\e[00;37m'
    reset='\e[0m'
 
-# Default
-export PS1="${yellow}\u${white}@${cyan}\h${white}:${orange}\w${reset}\n\\$ "
+# Default PS1
+prompt="${yellow}\u${white}@${cyan}\h${white}:${orange}\w"
+
+type __git_ps1 &>/dev/null && prompt="${prompt} ${green}\$(__git_ps1 \"(%s)\")"
+
+PS1="${prompt}${reset}\n\\$ "
+
+export PS1
 
 
