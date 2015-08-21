@@ -32,7 +32,8 @@
 # Default PS1
 prompt="${yellow}\u${white}@${cyan}\h${white}:${orange}\w"
 
-type __git_ps1 &>/dev/null && prompt="${prompt} ${green}\$(__git_ps1 \"(%s)\")"
+type rvm-prompt &>/dev/null && prompt="${prompt}${gray} \$(rvm-prompt)" 
+type __git_ps1 &>/dev/null  && prompt="${prompt} ${green}\$(__git_ps1 \"(%s)\")"
 
 PS1="${prompt}${reset}\n\\$ "
 
